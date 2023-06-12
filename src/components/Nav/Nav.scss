@@ -1,0 +1,103 @@
+.nav{
+    background-color: rgba(#000000, 0.6);
+    border-bottom: 2px solid #ffffff;
+    align-items: center;
+    .nav-header{
+        color: #ffffff;
+        list-style: none;
+        font-weight: bold;
+        li{
+            display: inline-block;
+            padding: 0.4em 0;
+            border: 3px solid #ffffff;
+            border-radius: 5px;
+            margin-right: 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            a{
+                padding: 0 2rem;
+            }
+            a:hover{
+                color: #ffffff;
+            }
+            &:hover{
+                background-color: rgba(#5507e6, 0.6);
+            }
+        }
+    }
+}
+.fade-in li {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.fade-in li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.nav-mobile{
+    display: none;
+}
+.icon-menu-mobile{
+    display: none;
+}
+
+  
+@media only screen and (max-width:768px){
+    .nav{
+        position: relative;
+    }
+    .nav-header{
+        display: none !important;
+    }
+    .icon-menu-mobile{
+        display: block;
+        color: #fff;
+        position: absolute;
+        right: 30px;
+        cursor: pointer;
+        &:hover{
+            color: #f6820e;
+        }
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .nav-mobile{
+        display: block;
+        color: #fff;
+        position: absolute;
+        bottom: -230px ;
+        background-color: #000000;
+        border-bottom: 1px solid #fff;
+        left: -100%;
+        z-index: 1000;
+        transition: 1s;
+        opacity: 0;
+        width: 100%;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+           li{
+            text-align: center;
+            border-bottom: 2px solid #fff;
+            font-weight: bold;
+            &:hover{
+                background-color: rgba(#5507e6, 0.6);
+            }
+            a{
+                width: 100%;
+                display: block;
+                height: 100%;
+                padding: 25px 0;
+            }
+           }
+        }
+    }
+    .open-menu{
+        opacity: 1;
+        left: 0;
+    }
+}  

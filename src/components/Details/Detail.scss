@@ -1,0 +1,116 @@
+.detail-page{
+    color: white;
+    text-align: center;
+    h2{
+        font-weight: bold;
+        font-size: 2rem;
+        text-shadow: 0px 0px 1px #ff0000;
+    }
+
+}
+.detail-project{
+    background: rgba(#000000, 0.8);
+    border-radius: 10px ;
+    padding: 35px;
+    margin:15px 0 30px 0;
+    opacity: 0;
+    transition: opacity 1s;
+    position: relative;
+    h3{
+        text-align: left;
+        margin-bottom: 15px;
+        border: 3px solid;
+        padding: 8px 15px;
+        font-weight: bold;
+        border-radius: 5px;
+        background: rgba(#000000, 0.6);
+        border-image: linear-gradient(to right, #5500ff, #f4e806) 1;
+    }
+    p{
+        text-align: justify;
+        margin-bottom: 20px;
+        padding: 0 22px;
+    }
+    ul{
+        text-align: left;
+        list-style:circle ;
+        padding-left: 30px;
+        padding-right: 0;
+        margin-bottom: 20px;
+        a{
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            &:hover{
+                background-color: rgba(#ff0000, 0.5);
+            }
+        }
+    }
+    .source-code li{
+        padding: 10px 0;
+    }
+    span{
+        background: #ffffff;
+        position: absolute;
+    }
+    .span-1{
+        height: 5px;
+        width: 100px;
+        top: 0;
+        left: 0;
+    }
+    .span-2{
+        height: 100px;
+        width: 5px;
+        top: 0;
+        left: 0;
+    }
+    .span-3{
+        height: 5px;
+        width: 100px;
+        top: 0;
+        right: 0;
+    }
+    .span-4{
+        height: 100px;
+        width: 5px;
+        top: 0;
+        right: 0;
+    }
+    .span-5{
+        height: 5px;
+        width: 100px;
+        bottom: 0;
+        left: 0;
+    }
+    .span-6{
+        height: 100px;
+        width: 5px;
+        bottom: 0;
+        left: 0;
+    }
+    .span-7{
+        height: 5px;
+        width: 100px;
+        bottom: 0;
+        right: 0;
+    }
+    .span-8{
+        height: 100px;
+        width: 5px;
+        bottom: 0;
+        right: 0;
+    }
+}
+.show{
+    opacity: 1;
+}
+@media only screen and (min-width: 350px) and (max-width: 500px){
+    .source-code a{
+        display: block !important;
+        width: 120px;
+        margin-top: 10px;
+    }
+}
